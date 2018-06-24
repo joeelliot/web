@@ -1,0 +1,13 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "description": "web boilerplate",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+  }
+}
