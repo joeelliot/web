@@ -1,21 +1,10 @@
-
-var http = require('http');
-var fileSystem = require('fs');
-
-var server = http.createServer(function(req, resp){
-	fileSystem.readFile('./index.html', function(error, fileContent){
-		if(error){
-			resp.writeHead(500, {'Content-Type': 'text/plain'});
-			resp.end('Error');
-		}
-		else{
-			resp.writeHead(200, {'Content-Type': 'text/html'});
-			resp.write(fileContent);
-			resp.end();
-		}
-	});
+const express = require('express');
+const serve   = require('express-static');
+ 
+const app = express();
+ 
+app.use(serve(__dirname + '/public'));
+ 
+const server = app.listen(3000, function(){
+  console.log('server is running at %s', server.address().port);
 });
-
-server.listen(8080);
-
-console.log('Listening at: localhost:8080');

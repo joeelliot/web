@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'fonts-raleway';
+    src: url('assets/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fonts-myriad-pro';
+    src: url('assets/fonts/Myriad-Pro-Regular.ttf') format('truetype');
+}
+
+body{
+	background-color: #EEE;
+
+}
+
+h1{
+  margin: 0;
+}
+
+#container{
+	background-color: #FFF;
+
+}
+
+#header{
+  background-color: #66CCFF;
+	font-family: 'fonts-raleway';
+	text-align: center;
+	padding: 10px;
+}
+
+#content{
+	padding: 10px;
+}
+
+#nav{
+	width: 160px;
+	font-family: 'fonts-myriad-pro';
+	float: left;
+}
+
+#main{
+	width: 600px;
+	font-family: 'fonts-myriad-pro';
+	float: right;
+}
+
+#footer{
+	font-family: 'fonts-raleway';
+	color: #FFF;
+	clear: both;
+	padding: 10px;
+	background-color: #999;
+	text-align: center;
+}
